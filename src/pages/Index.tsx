@@ -788,30 +788,47 @@ export default function Index() {
             </p>
           </div>
 
-          {/* Before / After example */}
-          <div className="grid grid-cols-2 gap-3 sm:gap-5 mb-12 sm:mb-16">
-            <div className="relative rounded-2xl overflow-hidden border border-white/10">
-              <img
-                src="https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/254751ce-b007-4180-bdb9-dcb1a45fa29d.JPG"
-                alt="До — обычное фото"
-                className="w-full h-56 sm:h-80 lg:h-96 object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-3">
-                <span className="bg-black/50 backdrop-blur-sm border border-white/20 text-white/70 text-xs px-3 py-1.5 rounded-full">До</span>
+          {/* Gallery Before / After */}
+          <div className="space-y-4 sm:space-y-5 mb-12 sm:mb-16">
+            {[
+              {
+                before: "https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/254751ce-b007-4180-bdb9-dcb1a45fa29d.JPG",
+                after: "https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/86cd66a0-7c8c-43a8-997c-5e7926d259a7.png",
+              },
+              {
+                before: "https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/88c074c8-1ad4-46ab-9cad-b6d1a7ae2d61.JPG",
+                after: "https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/0bcc82b5-7d6a-4d92-819c-e2a080eb97f2.jpeg",
+              },
+              {
+                before: "https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/0bcc82b5-7d6a-4d92-819c-e2a080eb97f2.jpeg",
+                after: "https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/252b6d4d-5803-49e1-8817-e396e92953a3.jpeg",
+              },
+            ].map((pair, i) => (
+              <div key={i} className="grid grid-cols-2 gap-3 sm:gap-5">
+                <div className="relative rounded-2xl overflow-hidden border border-white/10">
+                  <img
+                    src={pair.before}
+                    alt={`До ${i + 1}`}
+                    className="w-full h-52 sm:h-72 lg:h-80 object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-3">
+                    <span className="bg-black/50 backdrop-blur-sm border border-white/20 text-white/70 text-xs px-3 py-1.5 rounded-full">До</span>
+                  </div>
+                </div>
+                <div className="relative rounded-2xl overflow-hidden border border-orange-500/30">
+                  <img
+                    src={pair.after}
+                    alt={`После ${i + 1}`}
+                    className="w-full h-52 sm:h-72 lg:h-80 object-cover object-top"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-3">
+                    <span className="bg-orange-500/80 backdrop-blur-sm border border-orange-400/40 text-white text-xs px-3 py-1.5 rounded-full">После</span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="relative rounded-2xl overflow-hidden border border-orange-500/30">
-              <img
-                src="https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/86cd66a0-7c8c-43a8-997c-5e7926d259a7.png"
-                alt="После — нейрофото"
-                className="w-full h-56 sm:h-80 lg:h-96 object-cover object-top"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-              <div className="absolute bottom-3 left-3">
-                <span className="bg-orange-500/80 backdrop-blur-sm border border-orange-400/40 text-white text-xs px-3 py-1.5 rounded-full">После</span>
-              </div>
-            </div>
+            ))}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
