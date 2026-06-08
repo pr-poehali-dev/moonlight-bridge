@@ -6,9 +6,11 @@ export default function AboutSection() {
           {/* Photo placeholder */}
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden border border-white/10 aspect-[3/4] max-w-sm mx-auto lg:mx-0">
-              <div className="w-full h-full bg-gradient-to-br from-orange-500/20 via-white/5 to-black flex items-center justify-center">
-                <span className="text-8xl opacity-30">🧑‍🎨</span>
-              </div>
+              <img
+                src="https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/0f83ee77-9c73-46a8-8e35-4a382d8f0a59.jpeg"
+                alt="Экемел"
+                className="w-full h-full object-cover object-top"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             </div>
             {/* Stats */}

@@ -14,7 +14,7 @@ export default function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-xl">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl">
           {/* Phone */}
           <a
             href="tel:+7833251765"
@@ -40,6 +40,21 @@ export default function ContactSection() {
             <div>
               <p className="text-white/40 text-xs mb-0.5">Email</p>
               <p className="text-white font-semibold text-base">ekemel1996@gmail.com</p>
+            </div>
+          </a>
+          {/* Telegram */}
+          <a
+            href="https://t.me/EkaDib"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-4 bg-white/5 border border-white/10 hover:border-orange-500/40 hover:bg-white/[0.08] rounded-2xl p-5 transition-all duration-300"
+          >
+            <div className="w-12 h-12 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/30 transition-colors">
+              <span className="text-2xl">✈️</span>
+            </div>
+            <div>
+              <p className="text-white/40 text-xs mb-0.5">Telegram</p>
+              <p className="text-white font-semibold text-base">@EkaDib</p>
             </div>
           </a>
         </div>
