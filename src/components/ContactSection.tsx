@@ -17,7 +17,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-xl">
           {/* Phone */}
           <a
-            href="tel:+79990000000"
+            href="tel:+7833251765"
             className="group flex items-center gap-4 bg-white/5 border border-white/10 hover:border-orange-500/40 hover:bg-white/[0.08] rounded-2xl p-5 transition-all duration-300"
           >
             <div className="w-12 h-12 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/30 transition-colors">
@@ -25,13 +25,13 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="text-white/40 text-xs mb-0.5">Телефон</p>
-              <p className="text-white font-semibold text-base">+7 (999) 000-00-00</p>
+              <p className="text-white font-semibold text-base">+7 (833) 251-76-5</p>
             </div>
           </a>
 
           {/* Email */}
           <a
-            href="mailto:hello@example.com"
+            href="mailto:ekemel1996@gmail.com"
             className="group flex items-center gap-4 bg-white/5 border border-white/10 hover:border-orange-500/40 hover:bg-white/[0.08] rounded-2xl p-5 transition-all duration-300"
           >
             <div className="w-12 h-12 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/30 transition-colors">
@@ -39,7 +39,7 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="text-white/40 text-xs mb-0.5">Email</p>
-              <p className="text-white font-semibold text-base">hello@example.com</p>
+              <p className="text-white font-semibold text-base">ekemel1996@gmail.com</p>
             </div>
           </a>
         </div>
