@@ -17,7 +17,7 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-2xl">
           {/* Phone */}
           <a
-            href="tel:+7833251765"
+            href="tel:+79833251765"
             className="group flex items-center gap-4 bg-white/5 border border-white/10 hover:border-orange-500/40 hover:bg-white/[0.08] rounded-2xl p-5 transition-all duration-300"
           >
             <div className="w-12 h-12 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-500/30 transition-colors">
@@ -25,7 +25,7 @@ export default function ContactSection() {
             </div>
             <div>
               <p className="text-white/40 text-xs mb-0.5">Телефон</p>
-              <p className="text-white font-semibold text-base">+7 (833) 251-76-5</p>
+              <p className="text-white font-semibold text-base">+7 (983) 325-17-65</p>
             </div>
           </a>
 
