@@ -788,6 +788,32 @@ export default function Index() {
             </p>
           </div>
 
+          {/* Before / After example */}
+          <div className="grid grid-cols-2 gap-3 sm:gap-5 mb-12 sm:mb-16">
+            <div className="relative rounded-2xl overflow-hidden border border-white/10">
+              <img
+                src="https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/254751ce-b007-4180-bdb9-dcb1a45fa29d.JPG"
+                alt="До — обычное фото"
+                className="w-full h-56 sm:h-80 lg:h-96 object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <span className="bg-black/50 backdrop-blur-sm border border-white/20 text-white/70 text-xs px-3 py-1.5 rounded-full">До</span>
+              </div>
+            </div>
+            <div className="relative rounded-2xl overflow-hidden border border-orange-500/30">
+              <img
+                src="https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/86cd66a0-7c8c-43a8-997c-5e7926d259a7.png"
+                alt="После — нейрофото"
+                className="w-full h-56 sm:h-80 lg:h-96 object-cover object-top"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute bottom-3 left-3">
+                <span className="bg-orange-500/80 backdrop-blur-sm border border-orange-400/40 text-white text-xs px-3 py-1.5 rounded-full">После</span>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {/* Card 1 */}
             <div className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-orange-500/40 hover:bg-white/8 transition-all duration-300">
