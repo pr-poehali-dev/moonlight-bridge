@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar"
 import HeroSection from "@/components/HeroSection"
 import ServicesSection from "@/components/ServicesSection"
 import RestorationSection from "@/components/RestorationSection"
+import PricingSection from "@/components/PricingSection"
 
 export default function Index() {
   return (
@@ -12,6 +13,7 @@ export default function Index() {
       <HeroSection />
       <ServicesSection />
       <RestorationSection />
+      <PricingSection />
     </div>
   )
 }
