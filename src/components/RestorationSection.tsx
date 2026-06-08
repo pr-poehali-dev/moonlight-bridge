@@ -21,6 +21,24 @@ const features = [
   { icon: "📸", text: "Работаю даже с сильно повреждёнными фото" },
 ]
 
+const animationServices = [
+  {
+    icon: "✨",
+    title: "Оживление фото",
+    description: "Добавляю моргание, мимику и лёгкое движение — человек на старом снимке «оживает». Подходит для портретов любой эпохи.",
+  },
+  {
+    icon: "🎬",
+    title: "Создание видео",
+    description: "Превращаю одно или несколько фото в короткий видеоролик — со слайдами, эффектами параллакса и плавными переходами.",
+  },
+  {
+    icon: "🎞️",
+    title: "Семейная видеохроника",
+    description: "Собираю из архивных снимков атмосферный мини-фильм с музыкой — подарок для близких или память о дорогих людях.",
+  },
+]
+
 export default function RestorationSection() {
   return (
     <section id="restoration" className="relative z-10 bg-black px-6 sm:px-12 lg:px-20 py-20 sm:py-28 border-t border-white/5">
@@ -71,7 +89,7 @@ export default function RestorationSection() {
         </div>
 
         {/* Feature list */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-16 sm:mb-20">
           {features.map((f, i) => (
             <div key={i} className="flex items-start gap-3 bg-white/5 border border-white/10 rounded-2xl p-4">
               <span className="text-xl mt-0.5">{f.icon}</span>
@@ -80,8 +98,31 @@ export default function RestorationSection() {
           ))}
         </div>
 
+        {/* Animation & Video block */}
+        <div className="mb-10">
+          <div className="flex items-center gap-3 mb-8">
+            <div className="h-px flex-1 bg-white/10" />
+            <div className="inline-flex items-center bg-orange-500/10 border border-orange-500/30 rounded-full px-4 py-1.5">
+              <span className="text-orange-400 text-xs">✦ Оживление и видео</span>
+            </div>
+            <div className="h-px flex-1 bg-white/10" />
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-10">
+            {animationServices.map((s, i) => (
+              <div key={i} className="group relative bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-orange-500/40 hover:bg-white/[0.08] transition-all duration-300">
+                <div className="w-12 h-12 rounded-xl bg-orange-500/20 border border-orange-500/30 flex items-center justify-center mb-5 group-hover:bg-orange-500/30 transition-colors">
+                  <span className="text-2xl">{s.icon}</span>
+                </div>
+                <h3 className="text-white font-semibold text-lg mb-2">{s.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed">{s.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         <Button className="group relative bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-lg text-base font-semibold flex items-center gap-2 border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5">
-          Заказать реставрацию
+          Заказать реставрацию или видео
           <ArrowRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-rotate-12 transition-transform duration-300" />
           <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </Button>
