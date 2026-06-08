@@ -832,66 +832,6 @@ export default function Index() {
           </div>
         </div>
       </section>
-
-      {/* Restoration Section */}
-      <section id="restoration" className="relative z-10 bg-black px-6 sm:px-12 lg:px-20 py-20 sm:py-28 border-t border-white/5">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-            {/* Left — image comparison */}
-            <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-orange-500/10">
-                <img
-                  src="https://cdn.poehali.dev/projects/92e07662-2fc5-4af2-bf2f-48bceedf2eea/bucket/73056e8b-dc74-4e9b-8ffd-07581ec52b98.jpg"
-                  alt="Пример старой фотографии до реставрации"
-                  className="w-full h-80 sm:h-96 object-cover grayscale"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                <div className="absolute bottom-4 left-4">
-                  <span className="bg-white/10 backdrop-blur-sm border border-white/20 text-white/70 text-xs px-3 py-1.5 rounded-full">
-                    До реставрации
-                  </span>
-                </div>
-              </div>
-              {/* Decorative glow */}
-              <div className="absolute -inset-1 rounded-2xl bg-gradient-to-r from-orange-500/10 to-transparent blur-xl -z-10" />
-            </div>
-
-            {/* Right — text */}
-            <div>
-              <div className="inline-flex items-center bg-white/10 border border-white/20 rounded-full px-4 py-2 mb-6">
-                <span className="text-orange-400 text-xs">✦ Реставрация</span>
-              </div>
-              <h2 className="text-white text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-6">
-                Верну жизнь старым снимкам
-              </h2>
-              <p className="text-white/50 text-base sm:text-lg leading-relaxed mb-8">
-                Чёрно-белые, выцветшие, порванные — восстанавливаю семейные фотографии с помощью ИИ. Добавляю цвет, убираю царапины и дефекты, повышаю чёткость.
-              </p>
-
-              <div className="space-y-4 mb-10">
-                {[
-                  { icon: "🎨", text: "Колоризация — добавлю реалистичные цвета" },
-                  { icon: "🔍", text: "Повышение качества и чёткости снимка" },
-                  { icon: "✂️", text: "Устранение царапин, пятен и разрывов" },
-                  { icon: "🕊️", text: "Бережное отношение к каждой детали" },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3">
-                    <span className="text-xl">{item.icon}</span>
-                    <span className="text-white/70 text-sm">{item.text}</span>
-                  </div>
-                ))}
-              </div>
-
-              <Button className="group relative bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-lg text-base font-semibold flex items-center gap-2 border border-orange-400/30 shadow-lg shadow-orange-500/25 hover:shadow-xl hover:shadow-orange-500/40 transition-all duration-300 hover:scale-105 hover:-translate-y-0.5">
-                Заказать реставрацию
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 group-hover:-rotate-12 transition-transform duration-300" />
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-r from-white/0 via-white/10 to-white/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
