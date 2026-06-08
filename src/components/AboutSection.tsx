@@ -13,21 +13,7 @@ export default function AboutSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             </div>
-            {/* Stats */}
-            <div className="absolute bottom-6 left-4 right-4 grid grid-cols-3 gap-2 max-w-sm mx-auto">
-              <div className="bg-black/70 backdrop-blur-sm border border-white/10 rounded-xl p-3 text-center">
-                <p className="text-white font-bold text-xl">200+</p>
-                <p className="text-white/40 text-xs mt-0.5">работ</p>
-              </div>
-              <div className="bg-black/70 backdrop-blur-sm border border-white/10 rounded-xl p-3 text-center">
-                <p className="text-white font-bold text-xl">3+</p>
-                <p className="text-white/40 text-xs mt-0.5">года опыта</p>
-              </div>
-              <div className="bg-black/70 backdrop-blur-sm border border-white/10 rounded-xl p-3 text-center">
-                <p className="text-white font-bold text-xl">98%</p>
-                <p className="text-white/40 text-xs mt-0.5">довольных</p>
-              </div>
-            </div>
+
           </div>
 
           {/* Text */}
