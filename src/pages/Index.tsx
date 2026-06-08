@@ -4,6 +4,8 @@ import HeroSection from "@/components/HeroSection"
 import ServicesSection from "@/components/ServicesSection"
 import RestorationSection from "@/components/RestorationSection"
 import PricingSection from "@/components/PricingSection"
+import AboutSection from "@/components/AboutSection"
+import ContactSection from "@/components/ContactSection"
 
 export default function Index() {
   return (
@@ -14,6 +16,8 @@ export default function Index() {
       <ServicesSection />
       <RestorationSection />
       <PricingSection />
+      <AboutSection />
+      <ContactSection />
     </div>
   )
 }
